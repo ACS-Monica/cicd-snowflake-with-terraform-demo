@@ -2,13 +2,13 @@ terraform {
   required_providers {
     snowflake = {
       source  = "Snowflake-Labs/snowflake"
-      version = "0.63.0"
+      version = "~> 0.87"
     }
   }
 }
 
 provider "snowflake" {
-  username    = "tf-snow"
+  user    = "tf-snow"
   account     = "KBXIPRA-PBS"
   role        = "dev_sys_admin"
   private_key = var.snowflake_private_key
